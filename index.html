@@ -384,13 +384,39 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <!-- is-hidden -->
+  <div class="backdrop " data-modal>
     <div class="modal-window">
       <button class="modal-close-button" type="button" data-modal-close>
         <svg class="close-button" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
+      <form class="form-modal">
+        <p class="form-tytle">Leave your contacts and we will call you back</p>
+        <label class="label-form">
+          Name
+          <input class="input-modal" type="text" name="name" />
+        </label>
+        <label class="label-form">
+          Phone
+          <input class="input-modal" type="tel" name="phone" />
+        </label>
+        <label class="label-form">
+          Email
+          <input class="input-modal" type="email" name="email" />
+        </label>
+        <label class="label-form">
+          Comment
+          <input class="coments-form" type="text" name="coments" placeholder="Text input" />
+        </label>
+        <label class="">
+          <input type="checkbox" />
+          I accept the terms and conditions of the
+          <a href="">Privacy Policy</a>
+        </label>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
