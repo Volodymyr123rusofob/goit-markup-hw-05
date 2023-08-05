@@ -382,10 +382,22 @@
           </li>
         </ul>
       </div>
+      <div class="form-footer-wrap">
+        <p class="form-footer-title">Subscribe</p>
+        <form class="form-footer">
+          <input class="form-footer-inp" id="inp-footer" type="email" placeholder="E-mail" />
+          <label class="form-footer-lab" for="inp-footer"></label>
+          <button class="button-form-footer" type="submit">Subscribe
+            <svg class="icon-footer-mail" height="24" width="24">
+              <use href="./images/icons.svg#icon-footer"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
-  <!-- is-hidden -->
-  <div class="backdrop " data-modal>
+
+  <div class="backdrop  is-hidden" data-modal>
     <div class="modal-window">
       <button class="modal-close-button" type="button" data-modal-close>
         <svg class="close-button" width="8" height="8">
@@ -439,15 +451,7 @@
             <a class="link-policy" href="">Privacy Policy</a>
           </label>
         </div>
-        <!-- <label class="">
-          Comment
-          <input class="coments-form" type="text" name="coments" placeholder="Text input" />
-        </label>
-        <label class="">
-          <input type="checkbox" />
-          
-        </label> -->
-        <button type="submit">Send</button>
+        <button class="button-form" type="submit">Send</button>
       </form>
     </div>
   </div>

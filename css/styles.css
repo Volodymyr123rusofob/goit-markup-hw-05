@@ -543,8 +543,7 @@ img {
 }
 
 .cont-footer {
-  width: 1158px;
-  padding-left: 100px;
+  max-width: 1158px;
   margin: auto;
   display: flex;
   align-items: baseline;
@@ -558,6 +557,69 @@ img {
   display: flex;
   gap: 120px;
   align-items: flex-start;
+}
+.wraper-foter-centr {
+  margin-right: 80px;
+}
+
+.form-footer-wrap {
+}
+
+.form-footer-title {
+  margin-bottom: 16px;
+  color: var(--background);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.form-footer {
+  display: flex;
+}
+
+.form-footer-inp {
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+    border: 1px solid var(--background);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    padding: 0 16px;
+    color: var(--background);
+    font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+}
+
+
+.form-footer-inp::placeholder {
+  color: var(--background);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.form-footer-lab {
+  margin-right: 24px;
+}
+
+.button-form-footer {
+width: 165px;
+height: 40px;
+background-color: var(--brand-color);
+border-radius: 4px;
+border: none;
+color: var(--background);
+fill: var(--background);
+padding: 8px 24px;
+display: flex;
+align-items: center;
+}
+
+
+
+.icon-footer-mail {
+  margin-left: 16px;
 }
 
 .title-socmed {
@@ -780,6 +842,7 @@ img {
 }
 
 .label-form {
+  display: block;
   margin-bottom: 4px;
   color: var(--subtle-text);
   font-size: 12px;
@@ -809,6 +872,8 @@ img {
   border-color: var(--brand-color);
 }
 
+
+
 .icon-modal {
   position: absolute;
   left: 16px;
@@ -827,10 +892,12 @@ img {
 }
 
 .label-field {
+  display: block;
   color: var(--subtle-text);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
 }
 
 .text-user {
@@ -842,6 +909,8 @@ img {
   resize: none;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
+  display: block;
 }
 
 .text-user:hover {
@@ -859,17 +928,24 @@ img {
   letter-spacing: 0.04em;
 }
 
+.wrap-field {
+  margin-bottom: 24px;
+}
+
 .label-field-sel {
   color: var(--subtle-text);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
+  display: flex;
+ align-items: center;
 }
 
 .link-policy {
   color: var(--brand-color);
   line-height: 1.33;
   text-decoration-line: underline;
+  margin-left: 4px;
 }
 
 .chek {
@@ -884,6 +960,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
 }
 
 .label-field-inp:checked + .label-field-sel .chek {
@@ -898,4 +975,24 @@ img {
 
 .label-field-inp:focus + .label-field-sel .chek {
   border-color: var(--brand-color);
+}
+
+.button-form {
+  width: 169px;
+  height: 56px;
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--background);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form:hover {
+  background-color: var(--ocean);
+}
+
+.button-form:focus {
+  background-color: var(--ocean);
 }
