@@ -935,6 +935,10 @@ img {
   margin-bottom: 16px;
 }
 
+.wrap-fiel {
+  margin-bottom: 24px;
+}
+
 .label-field-sel {
   color: var(--subtle-text);
   font-size: 12px;
