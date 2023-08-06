@@ -385,8 +385,9 @@
       <div class="form-footer-wrap">
         <p class="form-footer-title">Subscribe</p>
         <form class="form-footer">
-          <input class="form-footer-inp" id="inp-footer" type="email" placeholder="E-mail" />
-          <label class="form-footer-lab" for="inp-footer"></label>
+          <label class="form-footer-lab" for="inp-footer">
+            <input name="inp-footer" class="form-footer-inp" id="inp-footer" type="email" placeholder="E-mail" />
+          </label>
           <button class="button-form-footer" type="submit">Subscribe
             <svg class="icon-footer-mail" height="24" width="24">
               <use href="./images/icons.svg#icon-footer"></use>
@@ -404,14 +405,14 @@
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
+      <p class="form-tytle">Leave your contacts and we will call you back</p>
       <form class="form-modal">
-        <p class="form-tytle">Leave your contacts and we will call you back</p>
         <div class="wrap-term">
           <label class="label-form" for="name">
             Name</label>
           <div class="wrap-icon-form">
-            <input class="input-modal" type="text" name="name" id="name" />
-            <svg class="icon-modal" width="18" height="18">
+            <input class="input-modal" type="text" name="user-name" id="name" />
+            <svg class="icon-modal" width="18" height="24">
               <use href="./images/icons.svg#icon-name-logo" />
             </svg>
           </div>
@@ -437,12 +438,13 @@
           </div>
         </div>
         <div class="wrap-field">
-          <label class="label-field" for="user-text">Comment</label>
-          <textarea class="text-user" name="user-text" id="user-text" placeholder="Text input"></textarea>
+          <label class="label-form" for="user-comment">Comment</label>
+          <textarea class="text-user" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
         </div>
         <div class="wrap-field">
-          <input class="label-field-inp visually-hidden" type="checkbox" id="user-text-sel" name="policy" value="tre">
-          <label class="label-field-sel" for="user-text-sel">
+          <input class="label-field-inp visually-hidden" type="checkbox" id="user-privacy" name="user-privacy"
+            value="true">
+          <label class="label-field-sel" for="user-privacy">
             <span class="chek">
               <svg class="chek-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-Vector" />
